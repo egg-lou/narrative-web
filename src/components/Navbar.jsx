@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-      <div className="flex justify-between items-center h-24 mx-auto px-4 text-white bg-sky-950">
+      <div className="flex justify-between items-center h-24 mx-auto px-4 text-white bg-sky-950 shadow-lg">
         <div className="flex items-center">
           <img
             src="/LOGO.png"
@@ -69,7 +69,7 @@ const Navbar = () => {
                     onClick={handleSubmenu1}
                     className={`${
                       showSubmenu ? 'transform rotate-180' : ''
-                    } inline-block ml-1 text-sm`}
+                    } inline-block ml-1 text-md`}
                   >
                     <MdOutlineArrowDropDown />
                   </button>
@@ -108,7 +108,7 @@ const Navbar = () => {
                   <div className="md:hidden">
                     <button
                       onClick={() => handleSubmenu2(link.name)}
-                      className="ml-1 text-sm flex items-center"
+                      className="ml-1 text-md flex items-center"
                     >
                       <MdOutlineArrowDropDown />
                     </button>
