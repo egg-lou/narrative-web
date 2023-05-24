@@ -66,7 +66,7 @@ const Navbar = () => {
                 </a>
                 {link.submenu && (
                   <button
-                    onClick={handleSubmenu1} // assuming handleSubmenu is the function to toggle the submenu
+                    onClick={handleSubmenu1}
                     className={`${
                       showSubmenu ? 'transform rotate-180' : ''
                     } inline-block ml-1 text-sm`}
