@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineArrowDropDown } from 'react-icons/md';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
     { name: 'Home', link: '/' },
     {
       name: 'Blog',
-      link: '/',
+      Link: '/',
       submenu: true,
       sublinks: [
         { name: 'Preparation', link: '/' },
@@ -16,7 +17,7 @@ const Navbar = () => {
         { name: 'End', link: '/' },
       ],
     },
-    { name: 'About', link: '/' },
+    { name: 'About', link: '/AboutPage' },
   ];
   const [nav, setNav] = useState(false);
   const [showSubmenu, setShowSubmenu] = useState(false);
@@ -38,12 +39,12 @@ const Navbar = () => {
   };
 
   return (
-      <div className="flex justify-between items-center h-24 mx-auto px-4 text-white bg-sky-950 shadow-lg">
+      <div className="flex justify-between items-center h-16 mx-auto px-4 py-5 text-white bg-sky-950 shadow-lg sticky top-0">
         <div className="flex items-center">
           <img
             src="/LOGO.png"
             alt="Logo"
-            style={{ width: '150px', height: 'auto' }}
+            style={{ width: '100px', height: 'auto' }}
             className="mr-1"
           />
           <div className="text-xl font-bold text-orange-500">

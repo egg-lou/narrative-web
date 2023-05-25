@@ -8,10 +8,10 @@ import {SiGmail} from 'react-icons/si'
 const Footer = () => {
   return (
 
-<div className="footer-container mx-auto">
-    <div className="mx-auto py-5 px-4 gap-8 text-white">
+<div className="footer-container mx-auto" style={{backgroundColor: "rgb(0,84,121"}}>
+    <div className="mx-auto py-3 px-4 gap-8 text-white">
       <div>
-        <h1 className="text-xl text-center font-bold text-orange-500 py-4 pt-3">
+        <h1 className="text-xl text-center font-bold text-orange-500 py-2 pt-3">
           BSIT 1 - 4 | CWTS
         </h1>
         <p className="text-center">
@@ -19,7 +19,7 @@ const Footer = () => {
           aliquid perspiciatis ex rerum Quis et eius quas sit quidem nulla qui obcaecati ratione
           aut mollitia inventore aut delectus magni.
         </p>
-        <div className="flex justify-evenly grid-cols-2 md:px-10 lg:px-20 my-6">
+        <div className="flex justify-evenly grid-cols-2 md:px-10 lg:px-20 my-3">
           <a href='https://www.facebook.com/profile.php?id=100086537897320' target='_blank' rel='noopener noreferrer'>
             <FaFacebookSquare size={30} />
           </a>
@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="flex-auto bg-black mx-auto my-auto">
-      <footer className="text-center text-white text-sm py-3">
+      <footer className="text-center text-white text-sm py-3 md: mx-auto">
         &copy; 2023 Polytechnic University of the Philippines - Main. All rights reserved. | BSIT 1 - 4
       </footer>
     </div>
