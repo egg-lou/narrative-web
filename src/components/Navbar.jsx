@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineArrowDropDown } from 'react-icons/md';
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
   let Links = [
     { name: 'Home', link: '/' },
     {
       name: 'Blog',
-      Link: '/',
+      Link: '/blog',
       submenu: true,
       sublinks: [
-        { name: 'Preparation', link: '/' },
-        { name: 'Part 1', link: '/' },
-        { name: 'Part 2', link: '/' },
-        { name: 'End', link: '/' },
+        { name: 'Preparation', link: '/preparation' },
+        { name: 'Part 1', link: '/part1' },
+        { name: 'Part 2', link: '/part2' },
+        { name: 'End', link: '/end' },
       ],
     },
-    { name: 'About', link: '/AboutPage' },
+    { name: 'About', link: '/about' },
   ];
   const [nav, setNav] = useState(false);
   const [showSubmenu, setShowSubmenu] = useState(false);
@@ -36,6 +37,7 @@ const Navbar = () => {
     } else {
       setShowSubmenu(linkName);
     }
+
   };
 
   return (
@@ -55,8 +57,7 @@ const Navbar = () => {
           <ul className="flex space-x-6 pr-5 text-l">
             {Links.map((link) => (
               <li key={link.name} className="relative">
-                <a
-                  href={link.link}
+                <NavLink to = {link.link}
                   onClick={() => {
                     if (link.submenu) {
                       handleSubmenu1();
@@ -64,7 +65,7 @@ const Navbar = () => {
                   }}
                 >
                   {link.name}
-                </a>
+                </NavLink>
                 {link.submenu && (
                   <button
                     onClick={handleSubmenu1}
@@ -79,12 +80,11 @@ const Navbar = () => {
                 <ul className="absolute left-0 mt-2 space-y-2 text-sm bg-sky-950 rounded-lg shadow-md ">
                 {link.sublinks.map((sublink) => (
                   <li key={sublink.name}>
-                    <a
-                      href={sublink.link}
+                    <NavLink to = {sublink.link}
                       className="block px-4 py-2 hover:bg-gray-200 hover:text-black text-white"
                     >
                       {sublink.name}
-                    </a>
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
           {Links.map((link) => (
             <li className='text-l p-4 border-b border-white' key={link.name}>
               <div className="flex items-center">
-                <a href={link.link}>{link.name}</a>
+                <NavLink to ={link.link}>{link.name}</NavLink>
                 {link.submenu && (
                   <div className="md:hidden">
                     <button
@@ -120,12 +120,11 @@ const Navbar = () => {
                 <ul className="bg-sky-950">
                   {link.sublinks.map((sublink) => (
                     <li key={sublink.name}>
-                      <a
-                        href={sublink.link}
+                      <NavLink to = {sublink.link}
                         className="block px-4 py-2 hover:bg-gray-200 hover:text-black text-white"
                       >
                         {sublink.name}
-                      </a>
+                      </NavLink>
                     </li>
                   ))}
                 </ul>

@@ -1,13 +1,15 @@
-export default [
+const leads = [
     {
-        picture: "/sample_female.jpg",
+        picture: "./pictures/sample_female.jpg",
         name: "Elliana Principe",
         role: "Overall Chair"
     },
 
     {
-        picture: "/dahyun.jpg",
+        picture: "./pictures/dahyun.jpg",
         name: "Marie Edusma",
         role: "Co-Chair"
     },
-]
+];
+
+export default leads;
