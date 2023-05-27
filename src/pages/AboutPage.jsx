@@ -1,6 +1,6 @@
 import React from 'react';
-import memberList from '../data/leads';
-import teamList from '../data/team_leads';
+import leadList from '../data/leads';
+
 
 const Card = ({ picture, name, role }) => {
   return (
@@ -29,18 +29,18 @@ const AboutPage = () => {
           </p>
         </div>
         <h2 className="bg-black text-white text-center">BSIT 1 - 4 | COMMITTEE</h2>
-        <div className="grid grid-cols-2 gap-4 p-6 bg-white">
-          {memberList.map(member => (
-            <Card
-              key={member.name}
-              picture={member.picture}
-              name={member.name}
-              role={member.role}
-            />
-          ))}
-        </div>
+          <div className="grid grid-cols-2 gap-4 p-6 bg-white">
+            {leadList.slice(0, 2).map((lead) => (
+              <Card
+                key={lead.name}
+                picture={lead.picture}
+                name={lead.name}
+                role={lead.role}
+              />
+            ))}
+          </div>
         <div className="bg-white grid grid-cols-2 gap-2 gap-4 p-6 md:grid-cols-4 md:gap-4 lg:grid-cols-6 lg:gap-4">
-          {teamList.map(lead => (
+          {leadList.slice(2).map(lead => (
             <Card
               key={lead.name}
               picture={lead.picture}

@@ -9,7 +9,6 @@ const Navbar = () => {
     { name: 'Home', link: '/' },
     {
       name: 'Blog',
-      Link: '/blog',
       submenu: true,
       sublinks: [
         { name: 'Preparation', link: '/preparation' },
