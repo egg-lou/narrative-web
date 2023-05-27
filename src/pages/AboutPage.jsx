@@ -39,7 +39,7 @@ const AboutPage = () => {
               />
             ))}
           </div>
-        <div className="bg-white grid grid-cols-2 gap-2 gap-4 p-6 md:grid-cols-4 md:gap-4 lg:grid-cols-6 lg:gap-4">
+        <div className="bg-white grid grid-cols-2 gap-2  p-6 md:grid-cols-4 md:gap-4 lg:grid-cols-6 lg:gap-4">
           {leadList.slice(2).map(lead => (
             <Card
               key={lead.name}
