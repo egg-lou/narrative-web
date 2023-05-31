@@ -1,11 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineArrowDropDown } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
-  let Links = [
+  const [nav, setNav] = useState(false);
+  const [showSubmenu, setShowSubmenu] = useState(null);
+
+  let navRef = useRef(null);
+  let submenuRef = useRef(null);
+  
+  const handleClickOutside = (event) => {
+    if (
+      navRef.current &&
+      !navRef.current.contains(event.target) &&
+      submenuRef.current &&
+      !submenuRef.current.contains(event.target)
+    ) {
+      setNav(false);
+      setShowSubmenu(false);
+    }
+  };
+  
+  useEffect(() => {
+    const handleEscapeKey = (event) => {
+      if (event.key === "Escape") {
+        setNav(false);
+        setShowSubmenu(false);
+      }
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscapeKey);
+  
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, []);
+  
+
+  const Links = [
     { name: 'Home', link: '/' },
     {
       name: 'Blog',
@@ -19,8 +55,6 @@ const Navbar = () => {
     },
     { name: 'About', link: '/about' },
   ];
-  const [nav, setNav] = useState(false);
-  const [showSubmenu, setShowSubmenu] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -36,14 +70,13 @@ const Navbar = () => {
     } else {
       setShowSubmenu(linkName);
     }
-
   };
-
+  
   return (
       <div className="flex justify-between items-center h-16 mx-auto px-4 py-5 text-white bg-sky-950 shadow-lg sticky top-0">
         <div className="flex items-center">
           <img
-            src="/LOGO.png"
+            src="/LOGOBSIT.png"
             alt="Logo"
             style={{ width: '100px', height: 'auto' }}
             className="mr-1"
@@ -53,10 +86,10 @@ const Navbar = () => {
           </div>
         </div>
           <div className="hidden md:flex">
-          <ul className="flex space-x-6 pr-5 text-l">
+          <ul ref={submenuRef}className="flex space-x-6 pr-5 text-l">
             {Links.map((link) => (
               <li key={link.name} className="relative">
-                <NavLink to = {link.link}
+                <NavLink to = {link.link} 
                   onClick={() => {
                     if (link.submenu) {
                       handleSubmenu1();
@@ -92,12 +125,12 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div onClick={handleNav} className="block md:hidden">
+        <div  onClick={handleNav} className="block md:hidden">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
-        <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-sky-950 bg-sky-950 ease-in-out duration-1000' : 'hidden md:hidden'}>
+        <ul ref={navRef} className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-sky-950 ease-in-out duration-500' : 'ease-in-out duration-1000 fixed left-[-100%]'}>
           <div>
-            <img src='/LOGO.png' alt='Logo' style={{ width: '150px', height: 'auto' }} className='mr-1' />
+            <img src='/LOGOBSIT.png' alt='Logo' style={{ width: '150px', height: 'auto' }} className='mr-1' />
             <h1 className='w-full text-l font-bold text-orange-500 m-4'>BSIT 1 - 4 | CWTS</h1>
           </div>
           {Links.map((link) => (

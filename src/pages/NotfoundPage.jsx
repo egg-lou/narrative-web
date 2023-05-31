@@ -5,7 +5,7 @@ const NotfoundPage = () => {
     <div className='w-full h-auto -mt-24'>
     <div className='flex flex-col justify-center items-center -space-y-20 bg-white'>
       <div className='flex justify-center'>
-        <img src='/LOGO.png' alt='404 ERROR' className='max-w-full' />
+        <img src='/LOGOBSIT.png' alt='404 ERROR' className='max-w-full' />
       </div>
       <div className='font-bold lg:text-4xl text-center md: text-2xl'>
         <p className='py-4 text-black'>404 PAGE NOT FOUND</p>
