@@ -75,12 +75,15 @@ const Navbar = () => {
   return (
       <div className="flex justify-between items-center h-16 mx-auto px-4 py-5 text-white bg-sky-950 shadow-lg sticky top-0">
         <div className="flex items-center">
+          <a href="/">
           <img
             src="/LOGOBSIT.png"
             alt="Logo"
             style={{ width: '100px', height: 'auto' }}
             className="mr-1"
           />
+          </a>
+          
           <div className="text-xl font-bold text-orange-500">
             BSIT 1 - 4 | CWTS
           </div>
@@ -99,7 +102,7 @@ const Navbar = () => {
                   {link.name}
                 </NavLink>
                 {link.submenu && (
-                  <button
+                  <button title='Dropdown-Button'
                     onClick={handleSubmenu1}
                     className={`${
                       showSubmenu ? 'transform rotate-180' : ''
@@ -139,7 +142,7 @@ const Navbar = () => {
                 <NavLink to ={link.link}>{link.name}</NavLink>
                 {link.submenu && (
                   <div className="md:hidden">
-                    <button
+                    <button title='2nd-DropDown'
                       onClick={() => handleSubmenu2(link.name)}
                       className="ml-1 text-md flex items-center"
                     >
