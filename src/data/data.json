@@ -1,17 +1,20 @@
 [
-    {
+    {   
+        "id": 1,
         "img": "./pictures/pic1.jpg",
         "title": "Preparation",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
         "link": "/blog/preparation"
     },
-    {
+    {   
+        "id": 2,
         "img": "./pictures/pic2.jpg",
         "title": "Immersion Day",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
         "link": "/blog/part1"
     },
     {
+        "id": 3,
         "img": "./pictures/pic3.jpg",
         "title": "End",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
