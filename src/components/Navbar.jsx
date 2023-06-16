@@ -48,8 +48,7 @@ const Navbar = () => {
       submenu: true,
       sublinks: [
         { name: 'Preparation', link: '/blog/preparation' },
-        { name: 'Part 1', link: '/blog/part1' },
-        { name: 'Part 2', link: '/blog/part2' },
+        { name: 'Immersion Day', link: '/blog/part1' },
         { name: 'End', link: '/blog/end' },
       ],
     },

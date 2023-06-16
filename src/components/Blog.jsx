@@ -7,7 +7,7 @@ const BlogList = () => {
     <div className="w-full bg-white py-10 px-2">
       <h1 className="text-center font-bold text-4xl md:text-2xl">Narrative Reports</h1>
       <div className="container mx-auto py-8 px-8">
-        <div className="grid lg:grid-cols-4 gap-3 md:grid-cols-2">
+        <div className="grid lg:grid-cols-3 gap-3 md:grid-cols-2">
           {blogs.map((blog) => (
             <div key={blog.id} className="shadow-xl rounded-2xl overflow-hidden">
               <div className="p-3 bg-gray-300 rounded-2xl h-full flex flex-col justify-between">
