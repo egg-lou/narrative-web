@@ -7,7 +7,7 @@ const BlogList = () => {
     <div className="w-full bg-white py-10 px-2">
       <h1 className="text-center font-bold text-4xl md:text-2xl">Narrative Reports</h1>
       <div className="container mx-auto py-8 px-8">
-        <div className="grid lg:grid-cols-3 gap-3 md:grid-cols-2">
+        <div className="grid lg:grid-cols-3 gap-6 md:grid-cols-2">
           {blogs.map((blog) => (
             <div key={blog.id} className="shadow-xl rounded-2xl overflow-hidden">
               <div className="p-3 bg-gray-300 rounded-2xl h-full flex flex-col justify-between">
@@ -16,7 +16,7 @@ const BlogList = () => {
                 </div>
                 <div>
                   <h3 className="flex justify-center font-bold pb-2 pt-4 text-lg">{blog.title}</h3>
-                  <p className="text-justify font-normal">{blog.text}</p>
+                  <p className="text-justify font-normal px-6">{blog.text}</p>
                 </div>
                 <div className="flex justify-center pb-5 bg-gray-300 pt-7">
                   <Link
