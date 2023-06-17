@@ -72,7 +72,7 @@ const Navbar = () => {
   };
   
   return (
-      <div className="flex justify-between items-center h-16 mx-auto px-4 py-5 text-white bg-sky-950 shadow-lg sticky top-0">
+      <div className="flex justify-between items-center h-16 mx-auto px-4 py-5 text-white bg-sky-950 shadow-lg sticky top-0" >
         <div className="flex items-center">
           <a href="/">
           <img
