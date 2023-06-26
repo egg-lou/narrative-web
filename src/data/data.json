@@ -2,22 +2,22 @@
     {   
         "id": 1,
         "img": "./pictures/pic1.jpg",
-        "title": "Preparation",
+        "title": "Preparation Narrative",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
-        "link": "/blog/preparation"
+        "link": "/blog/preparation_narrative"
     },
     {   
         "id": 2,
         "img": "./pictures/pic2.jpg",
-        "title": "Immersion Day",
+        "title": "Immersion Day Narrative",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
-        "link": "/blog/part1"
+        "link": "/blog/immersion_day_narrative"
     },
     {
         "id": 3,
         "img": "./pictures/pic3.jpg",
-        "title": "End",
+        "title": "Conclusion Narrative",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
-        "link": "/blog/end"
+        "link": "/blog/conclusion_narrative"
     }
 ]

@@ -44,12 +44,12 @@ const Navbar = () => {
   const Links = [
     { name: 'Home', link: '/' },
     {
-      name: 'Blog',
+      name: 'Narrative Reports',
       submenu: true,
       sublinks: [
-        { name: 'Preparation', link: '/blog/preparation' },
-        { name: 'Immersion Day', link: '/blog/part1' },
-        { name: 'End', link: '/blog/end' },
+        { name: 'Preparation Narrative', link: '/blog/preparation_narrative' },
+        { name: 'Immersion Day Narrative', link: '/blog/immersion_day_narrative' },
+        { name: 'Conclusion Narrative', link: '/blog/conclusion_narrative' },
       ],
     },
     { name: 'About', link: '/about' },
