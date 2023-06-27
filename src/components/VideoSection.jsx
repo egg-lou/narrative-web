@@ -53,7 +53,6 @@
 
 // export default VideoSection;
 
-
 import React, { useRef, useEffect } from 'react';
 import vid from '../data/videoplaceholder.mp4';
 

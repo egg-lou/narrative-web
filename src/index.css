@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.App {
-    background-color: rgb(0,84,121);
-}
 
 .AboutPage {
     background-color: rgb(0,84,121);

@@ -7,6 +7,7 @@ import BlogPage from "./pages/BlogPage"
 import AboutPage from "./pages/AboutPage";
 import NotfoundPage from './pages/NotfoundPage';
 
+
 function App() {
   return (
     <div className='App'>

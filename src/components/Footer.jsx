@@ -1,33 +1,32 @@
 import React from 'react'
-import {
-    FaFacebookSquare,
-    FaGithub
-}from 'react-icons/fa'
-import {SiGmail} from 'react-icons/si'
+
 
 const Footer = () => {
   return (
 
-<div className="footer-container mx-auto" style={{backgroundColor: "rgb(0,84,121", left: 0, bottom: 0, width: '100%'}}>
-    <div className="mx-auto py-3 px-4 gap-8 text-white">
+<div className="footer-container mx-auto" style={{backgroundColor: "white", left: 0, bottom: 0, width: '100%'}}>
+    <div className="mx-auto py-3 px-4 gap-8 text-black">
       <div>
-        <h1 className="text-xl text-center font-bold text-orange-500 py-2 pt-3">
-          BSIT 1 - 4 | CWTS
-        </h1>
-        <p className="text-center">
+        <div className="flex flex-row justify-center -mx-4 mb-4">
+          <img src='/bsitlogo.svg' alt='logo' className='w-20 items-center -mr-2'/>
+          <h1 className="text-xl text-center font-bold text-[#524781] py-2 pt-3">
+            BSIT 1 - 4 | CWTS
+          </h1>
+        </div>
+        <p className="text-center mx-20">
           Lorem ipsum dolor sit amet. Quo illum tempora est nesciunt sunt eum beatae tempora. A
           aliquid perspiciatis ex rerum Quis et eius quas sit quidem nulla qui obcaecati ratione
           aut mollitia inventore aut delectus magni.
         </p>
         <div className="flex justify-evenly grid-cols-2 md:px-10 lg:px-20 my-3 -space-x-40">
           <a href='https://www.facebook.com/profile.php?id=100086537897320' target='_blank' rel='noopener noreferrer'>
-            <FaFacebookSquare size={30} />
+            <img src="/fblogo.svg" alt="facebooklogo" className='w-20'/>
           </a>
           <a href='/' target='_blank' rel='noopener noreferrer'>
-            <FaGithub size={30} />
+            <img src="/gitlogo.svg" alt="githublogo" className='w-20'/>
           </a>
           <a href='/' target='_blank' rel='noopener noreferrer'>
-            <SiGmail size={30} />
+            <img src="/emaillogo.svg" alt="emaillogo" className='w-20'/>
           </a>
         </div>
       </div>
