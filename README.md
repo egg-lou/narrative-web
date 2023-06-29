@@ -1,7 +1,7 @@
 # CWTS Immersion Narrative Reports Website
 
 <p align="center">
-  <img src="pictures/grph.svg alt="Group Photo">
+  <img src="public/pictures/grph.svg alt="Group Photo">
 </p>
 
 ## Developer's Name
