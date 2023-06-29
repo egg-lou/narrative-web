@@ -1,8 +1,10 @@
 # CWTS Immersion Narrative Reports Website
 
+
 <p align="center">
   <img src="https://github.com/egg-lou/narrative-web/assets/118577897/4dc32105-61de-49ad-b5d0-2ff323a0a23f" alt="groupic">
 </p>
+
 
 ## Developer's Name
 Rafael Louie V. Miguel
@@ -43,5 +45,7 @@ For any inquiries or feedback, please contact our class through the email: [2223
 
 ## Contact Information
 For any personal inquiries or feedback, please reach out to Rafael Louie V. Miguel at [miguel.rafaellouie2003@gmail.com](mailto:miguel.rafaellouie2003@gmail.com).
+
 or
+
 For any personal inquiries or feedback, please reach out to Marie Cris O. Edusma at [mariecrisedusma@gmail.com](mailto:mariecrisedusma@gmail.com).
