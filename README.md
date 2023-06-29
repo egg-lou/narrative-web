@@ -1,4 +1,4 @@
-# CWTS Immersion Narrative Reports Website
+# CWTS Immersion Narrative Reports Website (Deployed on Firebase)
 
 
 <p align="center">
@@ -21,6 +21,7 @@ The website provides a centralized location for accessing and reviewing the narr
 - React
 - Tailwind CSS
 - Yarn
+- Firebase
 
 ## Development Date
 May-June 2023
