@@ -5,7 +5,7 @@ import secbg from '../images/temp2.png';
 
 const BlogList = () => {
   return (
-    <div >
+    <div>
       <div
         className="w-full lg:h-[68vh] md:h-auto sm:h-screen bg-cover bg-no-repeat bg-fixed flex items-center lg:justify-end md:justify-center sm:justify-center"
         style={{ backgroundImage: `url(${secbg})` }}
@@ -26,12 +26,12 @@ const BlogList = () => {
                   <div className="flex flex-col justify-center p-4 -mt-4">
                     <h3 className="font-bold font-abc text-center -mb-4">{blog.title}</h3>
                     <p className="text-justify font-abc text-xs mt-6">{blog.text}</p>
-                    <div className="bg-[#4B3D72] flex justify-center rounded-2xl mx-20 lg:mx-8 md:mx-8 mt-4 hover:bg-white border-2 border-[#4B3D72] text-white hover:text-[#4B3D72] duration-500" >
+                  </div>
+                  <div className="bg-[#4B3D72] flex justify-center rounded-2xl mx-20 lg:mx-8 md:mx-8 mt-2 mb-5 hover:bg-white border-2 border-[#4B3D72] text-white hover:text-[#4B3D72] duration-500" >
                       <Link to={blog.link} className="p-1 font-abc">
                         Read More
                       </Link>
                     </div>
-                  </div>
                 </div>
               </div>
             ))}

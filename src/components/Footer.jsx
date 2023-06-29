@@ -15,26 +15,24 @@ const Footer = () => {
             </h1>
           </div>
           <p className="text-center font-abc mx-4 md:mx-20">
-            Lorem ipsum dolor sit amet. Quo illum tempora est nesciunt sunt eum beatae tempora. A
-            aliquid perspiciatis ex rerum Quis et eius quas sit quidem nulla qui obcaecati ratione
-            aut mollitia inventore aut delectus magni.
+          This website serves as a platform to compile our narrative reports regarding our Civic Welfare Training Service Immersion. It also functions as a memorabilia for us to reflect upon. If you have any questions or feedback, please feel free to visit our Social Media Page, Github Repository, or reach out to us via email.
           </p>
           <div className="flex justify-center md:justify-evenly my-3">
             <a href='https://www.facebook.com/profile.php?id=100086537897320' target='_blank' rel='noopener noreferrer'>
               <img src="logo/fb.svg" alt="facebooklogo" className='w-12 md:w-20 mx-2' />
             </a>
-            <a href='/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/egg-lou/narrative-web' target='_blank' rel='noopener noreferrer'>
               <img src="logo/gh.svg" alt="githublogo" className='w-12 md:w-20 mx-2' />
             </a>
-            <a href='https://mail.google.com/mail/?view=cm&fs=1&to=2223bsit1.4@gmail.com' target='_blank' rel='noopener noreferrer'>
+            <a href='mailto:2223bsit1.4@gmail.com' target='_blank' rel='noopener noreferrer'>
               <img src="logo/em.svg" alt="emaillogo" className='w-12 md:w-20 mx-2' />
             </a>
           </div>
         </div>
       </div>
       <div className="flex-auto bg-black mx-auto my-auto">
-        <footer className="text-center font-abc text-white text-xs py-3 md:text-sm mx-auto">
-          &copy; 2023 Polytechnic University of the Philippines - Main. All rights reserved. | BSIT 1 - 4
+        <footer className="text-center font-abc text-white text-xs py-3 md:text-sm mx-4 md:flex md:justify-center">
+          &copy; 2023 Bachelor of Science in Information Technology 1 - 4 - PUP MAIN. All rights reserved.
         </footer>
       </div>
       <style>
@@ -56,3 +54,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// https://mail.google.com/mail/?view=cm&fs=1&to=2223bsit1.4@gmail.com

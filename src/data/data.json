@@ -3,21 +3,21 @@
         "id": 1,
         "img": "./pictures/pic1.jpg",
         "title": "Preparation Narrative",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
+        "text": "This is the narrative report for the preparation for our immersion, starting from our first meet up until before the D-day",
         "link": "/blog/preparation_narrative"
     },
     {   
         "id": 2,
         "img": "./pictures/pic2.jpg",
         "title": "Immersion Day Narrative",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
+        "text": "This is the narrative report for all of the things that happened during our immersion from the start to end, allow us to share our experience",
         "link": "/blog/immersion_day_narrative"
     },
     {
         "id": 3,
         "img": "./pictures/pic3.jpg",
         "title": "Conclusion Narrative",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum nunc aliquet. Lacus suspendisse faucibus interdum posuere.",
+        "text": "This is the conlcusion for our overall experience before, during, and after the immersion. We are grateful for this experience",
         "link": "/blog/conclusion_narrative"
     }
 ]

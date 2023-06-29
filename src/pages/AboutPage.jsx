@@ -19,7 +19,7 @@ const AboutPage = () => {
                 />
                  </div>
               </div>
-              <p className="px-8 lg:px-24 md:px-10 pb-10 text-white text-justify text-base font-abc sm:text-sm lg:text-lg md:text-base">{about.content}</p>
+              <p className="px-8 lg:px-24 md:px-10 pb-10 text-white text-center text-base font-abc sm:text-sm lg:text-lg md:text-base">{about.content}</p>
             </div>
           ))}
         </div>
