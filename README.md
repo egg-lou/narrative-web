@@ -4,8 +4,6 @@
   <img src="https://github.com/egg-lou/narrative-web/assets/118577897/4dc32105-61de-49ad-b5d0-2ff323a0a23f" alt="groupic">
 </p>
 
-![groupic](https://github.com/egg-lou/narrative-web/assets/118577897/4dc32105-61de-49ad-b5d0-2ff323a0a23f)
-
 ## Developer's Name
 Rafael Louie V. Miguel
 
