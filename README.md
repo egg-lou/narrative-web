@@ -1,4 +1,8 @@
-# CWTS Immersion Narrative Reports
+# CWTS Immersion Narrative Reports Website
+
+<p align="center">
+  <img src="public/pictures/grph.svg alt="Group Photo">
+</p>
 
 ## Developer's Name
 Rafael Louie V. Miguel
@@ -37,6 +41,3 @@ For any inquiries or feedback, please contact our class through the email: [your
 ## Contact Information
 For any personal inquiries or feedback, please reach out to Rafael Louie V. Miguel at [miguel.rafaellouie2003@gmail.com](mailto:miguel.rafaellouie2003@gmail.com).
 
-<p align="center">
-  <img src="path/to/your/image.png" alt="Image Description">
-</p>
