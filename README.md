@@ -7,6 +7,9 @@
 ## Developer's Name
 Rafael Louie V. Miguel
 
+## Designer's Name
+Marie Cris O. Edusma
+
 ## Project Description
 This repository contains a website I created for our Civic Welfare Training Service (CWTS) Immersion. It serves as a platform to compile all narrative reports and memories for our block section in Bachelor of Science in Information Technology 1 - 4. This project is a personal endeavor that I want to share with the entire class.
 
@@ -37,3 +40,8 @@ To run the project locally, follow these steps:
 
 ## Class Email
 For any inquiries or feedback, please contact our class through the email: [2223bsit1.4@gmail.com ](mailto:2223bsit1.4@gmail.com ).
+
+## Contact Information
+For any personal inquiries or feedback, please reach out to Rafael Louie V. Miguel at [miguel.rafaellouie2003@gmail.com](mailto:miguel.rafaellouie2003@gmail.com).
+or
+For any personal inquiries or feedback, please reach out to Marie Cris O. Edusma at [mariecrisedusma@gmail.com](mailto:mariecrisedusma@gmail.com).
