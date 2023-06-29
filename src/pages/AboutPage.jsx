@@ -1,32 +1,31 @@
 import React from 'react';
 import aboutdata from '../data/aboutdata.json';
+import abtBg from '../images/abtUsBg.svg';
 
 const AboutPage = () => {
   return (
-    <div>
-      <div className="w-full">
-        <div style={{ backgroundColor: "rgb(0,84,121)" }}>
-          <h1 className="text-center text-4xl font-bold py-5 text-white">About Us</h1>
-        </div>
-        <div className="bg-white p-10">
-          <div className="max-w-screen-lg mx-auto rounded-lg overflow-hidden shadow-2xl">
-            <div className="p-6 bg-gray-300">
-              {aboutdata.map((about) => (
-                <div key={about.id}>
-                  <div className="flex justify-center">
-                    <img src={about.image} alt="GroupPicture" style={{ width: "100%", maxWidth: "92%", height: "300px", objectFit: "cover"}} className='rounded-lg pt-8' />
-                  </div>
-                  <p className="text-md text-justify px-10 py-3 pt-8">{about.content}</p>
-                </div>
-              ))}
+    <div className="w-full min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${abtBg})` }}>
+      <div className="flex flex-col justify-center items-center">
+        <h3 className="text-white font-abc font-bold text-4xl mt-10">About Us</h3>
+        <div>
+          {aboutdata.map((about) => (
+            <div key={about.id}>
+              <div className="flex justify-center m-8">
+                <div className=' bg-[#E399EE] mx-0 lg:mx-16'>
+                <img
+                  src={about.image}
+                  alt="group"
+                  className="w-full max-w-93 h-auto max-h-300 object-cover p-1"
+                />
+                 </div>
+              </div>
+              <p className="px-8 lg:px-24 md:px-10 pb-10 text-white text-justify text-base font-abc sm:text-sm lg:text-lg md:text-base">{about.content}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-      <div className="bg-blue-500"></div>
     </div>
   );
 };
 
 export default AboutPage;
-

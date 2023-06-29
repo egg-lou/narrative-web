@@ -1,39 +1,49 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import blogPosts from '../data/blogContents'; 
+import blogPosts from '../data/blogContents';
 import NotfoundPage from './NotfoundPage';
 
 const BlogPage = () => {
-  const { id } = useParams(); 
+  const { id } = useParams();
 
-  const blogPost = blogPosts.find(post => post.id === id);
+  const blogPost = blogPosts.find((post) => post.id === id);
 
-  return (
-    <div className='w-full h-auto bg-white pb-10 pt-10 px-10'>
-      {blogPost ? (
-        <div className='max-w-screen-lg mx-auto rounded-lg overflow-hidden shadow-2xl bg-gray-300'>
-          <div className='font-bold text-4xl text-center'>
-            <h2 className='mt-10 mb-6'>{blogPost.title}</h2>
+  if (!blogPost) {
+    return (
+      <div>
+        <NotfoundPage />
+      </div>
+    );
+  }
+
+  const renderContent = () => {
+    return (
+      <div className='w-full min-h-screen bg-[#524781] flex justify-center'>
+        <div className='flex flex-col justify-center items-center py-10 px-4 md:px-6 lg:px-6'>
+          <div className='w-full h-auto bg-white'>
+          <div className='flex flex-col justify-center items-center mt-10 text-black'>
+            <h3 className='text-2xl lg:text-5xl md:text-5xl font-bold mb-4 font-abc'>{blogPost.title}</h3>
+            <h1 className='text-xl font-bold mb-2'>{blogPost.date}</h1>
           </div>
-          <div className='flex justify-center p-10 mt-3'>
-            <img src={blogPost.img1} alt='pic' style={{ width: "100%", maxWidth: "92%", height: "300px", objectFit: "cover" }} className='rounded-lg' />
+          <div className='flex flex-col justify-center items-center mx-4 my-2 md:mx-8 lg:mx-8 md:my-4 lg:my-4 text-black font-abc tracking-wide text-justify text-xs lg:text-lg md:text-lg'>
+              <img src={blogPost.img1} alt='Img' className='mb-2' />
+              <p className='mb-6 mt-10 indent-10'>{blogPost.content1}</p>
+              {blogPost.content2 && <p className='mb-6 indent-10'>{blogPost.content2}</p>}
+              {blogPost.img2 && <img src={blogPost.img2} alt='Img' className='img my-10' />}
+              {blogPost.content3 && <p className='mb-6 indent-10'>{blogPost.content3}</p>}
+              {blogPost.content4 && <p className='mb-6 indent-10'>{blogPost.content4}</p>}
+              {blogPost.img3 && <img src={blogPost.img3} alt='Img' className='img my-10' />}
+              {blogPost.content5 && <p className='mb-6 indent-10'>{blogPost.content5}</p>}
+              {blogPost.content6 && <p className='mb-6 indent-10'>{blogPost.content6}</p>}
+              {blogPost.img4 && <img src={blogPost.img4} alt='Img' className='img my-10' />}
+            </div>
           </div>
-          <div className='text-left text-sm pl-20 font-bold mb-10 -mt-8'>
-            <span className='block'>{blogPost.date}</span>
-          </div>
-          <p className='px-6 sm:px-10 md:px-20 text-justify'>{blogPost.content1}</p>
-          <div className='flex justify-center p-10'>
-            <img src={blogPost.img2} alt='pic' style={{ width: "100%", maxWidth: "92%", height: "300px", objectFit: "cover" }} className='rounded-lg' />
-          </div>
-          <p className='px-6 sm:px-10 md:px-20 text-justify pb-20'>{blogPost.content2}</p>
         </div>
-      ) : (
-        <div>
-          <NotfoundPage />
-        </div>
-      )}
-    </div>
-  );
+      </div>
+    );
+  };
+
+  return <div>{renderContent()}</div>;
 };
 
 export default BlogPage;
