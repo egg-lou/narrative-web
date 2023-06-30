@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import blogs from '../data/data';
 import secbg from '../images/temp2.png';
+
+const LazyLoadedImage = lazy(() => import('./LazyLoadedImage'));
 
 const BlogList = () => {
   return (
@@ -16,22 +18,19 @@ const BlogList = () => {
               <div key={blog.id} className="overflow-hidden rounded-lg mt-0 lg:mt-24">
                 <div className="cards w-full h-full bg-white border-8 border-[#B56CCA]">
                   <div className="aspect-w-4 aspect-h-2 flex justify-center">
-                    <img
-                      src={blog.img}
-                      alt="display"
-                      className="p-2"
-                      style={{ width: '380px', height: '190px' }}
-                    />
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <LazyLoadedImage src={blog.img} alt="display" />
+                    </Suspense>
                   </div>
                   <div className="flex flex-col justify-center p-4 -mt-4">
                     <h3 className="font-bold font-abc text-center -mb-4">{blog.title}</h3>
                     <p className="text-justify font-abc text-xs mt-6">{blog.text}</p>
                   </div>
-                  <div className="bg-[#4B3D72] flex justify-center rounded-2xl mx-20 lg:mx-8 md:mx-8 mt-2 mb-5 hover:bg-white border-2 border-[#4B3D72] text-white hover:text-[#4B3D72] duration-500" >
-                      <Link to={blog.link} className="p-1 font-abc">
-                        Read More
-                      </Link>
-                    </div>
+                  <div className="bg-[#4B3D72] flex justify-center rounded-2xl mx-20 lg:mx-8 md:mx-8 mt-2 mb-5 hover:bg-white border-2 border-[#4B3D72] text-white hover:text-[#4B3D72] duration-500">
+                    <Link to={blog.link} className="p-1 font-abc">
+                      Read More
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}

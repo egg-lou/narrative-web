@@ -1,9 +1,9 @@
 [
     {
       "id": "preparation_narrative",
-      "img1": "../pictures/pic1.jpg",
-      "img2": "../pictures/pic1.jpg",
-      "img3": "../pictures/pic1.jpg",
+      "img1": "../pictures/2.png",
+      "img2": "../pictures/7.png",
+      "img3": "../pictures/11.png",
       "title": "Preparation Narrative",
       "date": "June 24, 2023",
       "content1": "The narrative report aims to provide a comprehensive overview of the upcoming Civic Welfare Training Service (CWTS) project conducted by our university class. The CWTS project serves as a platform for our class to engage in community service activities. Our specific objective is to clean and paint gutters to improve the overall appearance and cleanliness of our community. To accomplish this, various stakeholders are involved, including the class members, the executive team, the budgeting team, and the documentation team. The project requires effective planning, organization, and allocation of responsibilities to ensure its successful execution.",
@@ -15,10 +15,10 @@
 
     {
         "id": "immersion_day_narrative",
-        "img1": "../pictures/pic2.jpg",
-        "img2": "../pictures/pic2.jpg",
-        "img3": "../pictures/pic2.jpg",
-        "img4": "../pictures/pic2.jpg",
+        "img1": "../pictures/13.png",
+        "img2": "../pictures/14.png",
+        "img3": "../pictures/15.png",
+        "img4": "../pictures/16.png",
         "title": "Immersion Day Narrative",
         "date": "June 25, 2023",
         "content1": "The CWTS Immersion was organized as an integral part of the university's community service initiatives, actively involving students in practical endeavors aimed at enhancing the campus environment. Our class was specifically assigned the task of cleaning and repainting the gutters, to restore their original bright yellow color. To efficiently carry out the assignments, we formed separate teams dedicated to the cleaning and painting processes, commencing the immersion promptly at 8:00 AM. ",
@@ -37,9 +37,9 @@
 
       {
         "id": "conclusion_narrative",
-        "img1": "../pictures/pic3.jpg",
-        "img2": "../pictures/pic3.jpg",
-        "img3": "../pictures/pic3.jpg",
+        "img1": "../pictures/18.png",
+        "img2": "../pictures/3.png",
+        "img3": "../pictures/19.png",
         "title": "Conclusion Narrative",
         "date": "June 28, 2023",
         "content1": "The immersion has become a new milestone for us: starting from the planning and meetings to teamwork in cleaning and painting, we are able not only to do teamwork but also to know even more our classmates and teacher through the laughs and hardships that we have been through during the preparation and actual engagement.",

@@ -11,11 +11,11 @@ const AboutPage = () => {
           {aboutdata.map((about) => (
             <div key={about.id}>
               <div className="flex justify-center m-8">
-                <div className=' bg-[#E399EE] mx-0 lg:mx-16'>
+                <div className=' bg-[#E399EE] mx-0 lg:mx-16 rounded-xl'>
                 <img
                   src={about.image}
                   alt="group"
-                  className="w-full max-w-93 h-auto max-h-300 object-cover p-1"
+                  className="w-full max-w-93 h-auto max-h-300 object-cover p-1 rounded-xl"
                 />
                  </div>
               </div>
