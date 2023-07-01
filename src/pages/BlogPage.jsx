@@ -70,12 +70,12 @@ const BlogPage = () => {
   }
 
   return (
-    <div className='w-full min-h-screen bg-[#524781] flex justify-center px-2 md:px-8'>
+    <div className='w-full min-h-screen bg-[#524781] flex justify-center px-2 items-center md:px-8'>
       <div className='flex flex-col justify-center items-center  py-10 px-4 md:px-6 lg:px-6'>
         <div className='w-full h-auto bg-white rounded-xl shadow-2xl'>
           <div className='flex flex-col justify-center items-center mt-10 text-black'>
             <h3 className='text-2xl lg:text-5xl md:text-5xl font-bold mb-4 font-abc'>{blogPost.title}</h3>
-            <h1 className='text-xl font-bold mb-2'>{blogPost.date}</h1>
+            <h1 className='text-xl font-bold mb-2 text-center'>{blogPost.date}</h1>
           </div>
           <Suspense fallback={<div className='text-center'>Loading...</div>}>
             <LazyBlogPost blogPost={blogPost} />
