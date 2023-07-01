@@ -39,7 +39,7 @@ To run the project locally, follow these steps:
 5. Open your browser and visit: `http://localhost:3000`
 
 ## Website Link
-[https://bsit-1-4-cwts-website.web.app/]
+https://bsit-1-4-cwts-website.web.app/
 
 ## Class Email
 For any inquiries or feedback, please contact our class through the email: [2223bsit1.4@gmail.com ](mailto:2223bsit1.4@gmail.com ).
